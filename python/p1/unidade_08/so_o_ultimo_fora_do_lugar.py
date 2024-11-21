@@ -1,10 +1,30 @@
+#falta ajustar
+
+def organiza(array):
+    ultimo = array[-1]
+    if ultimo < 0 or ultimo == 0 and len(array) > 1:
+        i = len(array) - 1
+        while array[i-1] > 0 or array[i-1] == 0:
+            array[i-1], array[i] = array[i], array[i-1]
+            i -= 1 
+    #print(array)
+
+l1 = [0, -1]
+assert organiza(l1) == None
+assert l1 == [0, -1]
 
 
+l1 = [-2, -4, -1, 0, 0, 10, 1, 2, 7, -20]
+assert organiza(l1) == None
+assert l1 == [-2, -4, -1, -20, 0, 0, 10, 1, 2, 7]
 
+l2 = [-2, -4, -1, -20, 0, 0, 10, 1, 2, 7, 0]
+assert organiza(l2) == None
+assert l2 == [-2, -4, -1, -20, 0, 0, 0, 10, 1, 2, 7]
 
-
-
-
+l3 = [-2, -4, -1, -20, 0, 0, 0, 10, 1, 2, 7, 4]
+assert organiza(l3) == None
+assert l3 == [-2, -4, -1, -20, 0, 0, 0, 10, 1, 2, 7, 4]
 
 # # Só o Último Fora de Lugar?
 
@@ -43,21 +63,5 @@
 # elementos do array e nem utilizar lista auxiliar.
 
 # A função deve executar em tempo linear.
-
-# ## Exemplos e Asserts
-
-# ```
-# l1 = [-2, -4, -1, 0, 0, 10, 1, 2, 7, -20]
-# assert organiza(l1) == None
-# assert l1 == [-2, -4, -1, -20, 0, 0, 10, 1, 2, 7]
-
-# l2 = [-2, -4, -1, -20, 0, 0, 10, 1, 2, 7, 0]
-# assert organizado(l2) == None
-# assert l2 == [-2, -4, -1, -20, 0, 0, 0, 10, 1, 2, 7]
-
-# l3 = [-2, -4, -1, -20, 0, 0, 0, 10, 1, 2, 7, 4]
-# assert organiza(l3) == None
-# assert l3 == [-2, -4, -1, -20, 0, 0, 0, 10, 1, 2, 7, 4]
-# ```
 
 # <small>Jorge Figueiredo</small>
