@@ -17,5 +17,7 @@ public class MaiorEposicao {
         }
         System.out.println(maior);
         System.out.println(posicao+1);
+        
+        sc.close();
     }
 }
