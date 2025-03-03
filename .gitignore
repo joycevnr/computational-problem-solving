@@ -1,0 +1,44 @@
+.metadata
+#Metadados são dados que descrevem ou fornecem informações sobre outros dados. No contexto de arquivos XML ou outros arquivos de configuração, metadados podem incluir informações sobre configurações de sistema, propriedades de objetos, e outros dados que são usados para definir o comportamento de um sistema ou aplicativo.
+# Ignorar arquivos de classe compilados (Java)
+*.class
+
+# Pasta de build do Maven (contém arquivos binários gerados e não precisa ser versionada)
+target/
+
+# Pasta de build do Gradle (também contém arquivos binários que podem ser regenerados)
+.gradle/
+build/
+
+# Arquivos específicos do Eclipse IDE. São configurações locais do projeto.
+.project
+.classpath
+.settings/
+
+# Arquivos específicos do IntelliJ IDEA (configurações locais da IDE para o projeto)
+.idea/
+*.iml
+
+# Arquivos de configuração do NetBeans (configurações locais para o IDE NetBeans)
+nbproject/
+
+# Arquivos temporários do sistema operacional (como o macOS e o Windows criam automaticamente)
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários criados por editores de texto (por exemplo, arquivos swap do Vim)
+*.swp
+*.swo
+
+# Ignorar arquivos JAR gerados pela compilação (geralmente são reconstruídos)
+*.jar
+
+# Arquivo XML de configuração de log (como o log4j.xml). Pode ser configurado localmente.
+log4j.xml
+
+# Arquivos de backup ou temporários criados por editores de texto ou outras ferramentas
+*.bak
+*.tmp
+
+# Arquivo XML específico de configuração de persistência (geralmente sensível ou específico do ambiente)
+persistence.xml

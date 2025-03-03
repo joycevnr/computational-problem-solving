@@ -1,0 +1,43 @@
+# Ignorar arquivos de compilação
+*.class
+
+
+# Pasta de build do Maven (onde podem existir arquivos XML)
+target/
+
+# Pasta de build do Gradle (onde também podem existir arquivos XML)
+.gradle/
+build/
+
+# Eclipse IDE files
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA files (pode conter arquivos de configuração XML)
+.idea/
+*.iml
+
+# Arquivos de configuração do NetBeans
+nbproject/
+
+# Arquivos temporários do sistema (sistemas operacionais criam arquivos XML temporários)
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos temporários do editor de texto
+*.swp
+*.swo
+
+# Ignorar JARs (gerados pela compilação)
+*.jar
+
+# Arquivo XML de configuração do log (como o log4j.xml)
+log4j.xml
+
+# Arquivos de configuração local (caso seja XML ou qualquer outro tipo de arquivo gerado automaticamente)
+*.bak
+*.tmp
+
+# Arquivo XML específico de configuração de persistência (por exemplo, do JPA)
+persistence.xml
