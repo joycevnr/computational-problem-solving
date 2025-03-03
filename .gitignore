@@ -1,4 +1,5 @@
 .metadata
+/bin/
 #Metadados são dados que descrevem ou fornecem informações sobre outros dados. No contexto de arquivos XML ou outros arquivos de configuração, metadados podem incluir informações sobre configurações de sistema, propriedades de objetos, e outros dados que são usados para definir o comportamento de um sistema ou aplicativo.
 # Ignorar arquivos de classe compilados (Java)
 *.class
