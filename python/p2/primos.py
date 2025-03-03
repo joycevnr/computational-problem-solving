@@ -1,3 +1,6 @@
+# Primos gêmeos são pares de primos que diferem em 2 (por exemplo, 3 e 5, 5 e 7, 11 e 13). 
+# Escreva um algoritmo que encontre todos os pares de primos gêmeos menores que 1000
+
 def ehPrimo(n):
     if n < 2:
         return False
