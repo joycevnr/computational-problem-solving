@@ -1,5 +1,6 @@
 package leda;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class MergeSortPasso {
     public static void main(String[] args) {
@@ -11,12 +12,13 @@ public class MergeSortPasso {
         for (int i = 0; i < elementos.length; i++) {
             lista[i] = Integer.parseInt(elementos[i]);
         }
-        mergeSort(lista, 0, lista.length);
+        mergeSort(lista, 0, lista.length - 1);
     }
 
     public void mergeSort(int[] v, int ini, int fim){
         if(ini < fim){
             int meio = (ini + fim) / 2;
+            System.out.println(Arrays.toString(v);
             mergeSort(v, ini, meio);
             mergeSort(v, meio+1, fim);
             merge(v, ini, fim);
@@ -31,6 +33,7 @@ public class MergeSortPasso {
         for(int i = 0; i < v.length; i++){
             helper[i] = v[i];
         }
+        System.out.println(Arrays.toString(v);
         int i = ini; //primeira metade
         int meio = (ini + fim) / 2; //pivot
         int k = ini; //posições do array
@@ -44,5 +47,6 @@ public class MergeSortPasso {
         while(ini <= meio){//add o restante da primeira parte se sobrar
             v[k++] = helper[i++];
         }
+        System.out.println(Arrays.toString(v);
     }
 }
