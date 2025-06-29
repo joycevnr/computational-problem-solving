@@ -3,7 +3,7 @@ package leda;
 import java.util.Scanner;
 import java.util.Arrays;
 
-class InsereUltimo {
+class InserePrimeiro {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -12,10 +12,10 @@ class InsereUltimo {
         for (int i = 0; i < entrada.length; i++) {
             numeros[i] = Integer.parseInt(entrada[i]);
         }
-        int j = numeros.length - 1;
-        while (j > 0 && numeros[j] < numeros[j - 1]) {
-            swap(numeros, j, j - 1);
-            j--;
+        int j = 0;
+        while (j < numeros.length - 1 && numeros[j] > numeros[j + 1]) {
+            swap(numeros, j, j + 1);
+            j++;
         }
         System.out.println(Arrays.toString(numeros));
     }
