@@ -28,6 +28,7 @@ public class MergeSort {
         for(int i = ini; i <= fim; i++) {
             auxiliar[i] = arr[i];
         }
+        //no merge sempre tenho a divisão no meio, por isso tem metade da esquerda e metade da direita
 
         // Ponteiros para navegação
         int ponteiroEsq = ini;        // Início da metade esquerda
