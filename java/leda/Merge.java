@@ -28,7 +28,7 @@ class Merge {
             merge(array, inicio, fim);
         }
 
-    }
+    }x
 
     /**
      * Junta dois sub-arrays ordenados (`inicio..meio` e `meio+1..fim`).
